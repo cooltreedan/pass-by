@@ -15,17 +15,19 @@
     "ca_us_direction": "Canada → USA",
     "ca_us_desc": "Bring Canada-purchased items to WA",
     "buy_title": "Buy for Me",
-    "buy_desc": "I purchase on my credit card in the US — minimal fee (I earn points)",
+    "buy_desc": "I purchase on my credit card in the US — minimal or even free fee depending on item size and value (I earn points)",
     "carry_title": "Carry for Me",
     "carry_desc": "You buy it and ship to my WA address — I carry it across for a reasonable fee"
   },
   "pricing": {
-    "title": "Pricing",
-    "rule1": "~20% of the US/CA price difference as a reference rate — not fixed",
+    "title": "Pricing & Important Notes",
+    "rule1": "~20% of the US/CA price difference as a reference — not fixed, depends on item size and value",
     "rule2": "Larger packages cost more; oversized items (> car trunk) not accepted",
-    "rule3": "Buy for Me: minimal or no fee — I earn credit card points",
-    "rule4": "Carry for Me: standard carrying fee applies",
-    "rule5": "Final price confirmed after reviewing your request via your contact"
+    "rule3": "Buy for Me: minimal or even free — depends on item size and value. I earn credit card points, and if the package is delivered to my door and gets lost, my insurance covers it (may take some time)",
+    "rule4": "Carry for Me: standard carrying fee — note that if a package is left at the door unattended and gets stolen, I am not responsible",
+    "rule5": "Final price confirmed after reviewing your request via your contact",
+    "rule6": "If I buy it, I generally don't need to open the packaging. If you ship it to me, I may need to open and inspect it — I can't carry anything illegal",
+    "rule7": "If you buy it yourself: pay the fee upon delivery. If I buy it for you: a 20% deposit of the item price is required upfront"
   },
   "how": {
     "title": "How It Works",
