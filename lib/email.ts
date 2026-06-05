@@ -1,7 +1,5 @@
 import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
-
 export type RequestData = {
   direction: string
   serviceType: string
@@ -37,6 +35,7 @@ Contact:      ${data.contact}
 Notes:        ${data.notes || '—'}
 `
 
+  const resend = new Resend(process.env.RESEND_API_KEY)
   return resend.emails.send({
     from: 'PassBy <onboarding@resend.dev>',
     to: 'cooltreedan@gmail.com',
