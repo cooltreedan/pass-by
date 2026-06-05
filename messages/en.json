@@ -1,0 +1,73 @@
+{
+  "nav": {
+    "logo": "PassBy · 顺路带",
+    "langToggle": "中文"
+  },
+  "hero": {
+    "headline": "I cross the BC–WA border weekly. Let me bring things for you.",
+    "subtext": "I commute between British Columbia and Washington State. I can buy or carry items across the border at a reasonable fee.",
+    "cta": "Submit a Request"
+  },
+  "services": {
+    "title": "Services",
+    "us_ca_direction": "USA → Canada",
+    "us_ca_desc": "Bring US-purchased items to BC",
+    "ca_us_direction": "Canada → USA",
+    "ca_us_desc": "Bring Canada-purchased items to WA",
+    "buy_title": "Buy for Me",
+    "buy_desc": "I purchase on my credit card in the US — minimal fee (I earn points)",
+    "carry_title": "Carry for Me",
+    "carry_desc": "You buy it and ship to my WA address — I carry it across for a reasonable fee"
+  },
+  "pricing": {
+    "title": "Pricing",
+    "rule1": "~20% of the US/CA price difference as a reference rate — not fixed",
+    "rule2": "Larger packages cost more; oversized items (> car trunk) not accepted",
+    "rule3": "Buy for Me: minimal or no fee — I earn credit card points",
+    "rule4": "Carry for Me: standard carrying fee applies",
+    "rule5": "Final price confirmed after reviewing your request via your contact"
+  },
+  "how": {
+    "title": "How It Works",
+    "step1_title": "Submit",
+    "step1_desc": "Fill out the form below with what you need",
+    "step2_title": "Confirm",
+    "step2_desc": "I'll review and reply via your contact with a quote",
+    "step3_title": "Receive",
+    "step3_desc": "Your item arrives on my next border crossing"
+  },
+  "form": {
+    "title": "Submit a Request",
+    "direction_label": "Direction",
+    "direction_us_ca": "USA → Canada",
+    "direction_ca_us": "Canada → USA",
+    "service_label": "Service Type",
+    "service_buy": "Buy for Me (I'll purchase it)",
+    "service_carry": "Carry for Me (I already purchased it)",
+    "item_name_label": "Item Name",
+    "item_name_placeholder": "Brief description of the item",
+    "item_link_label": "Item Link (optional)",
+    "item_link_placeholder": "Amazon or other shopping site URL",
+    "us_price_label": "US Price (USD)",
+    "us_price_placeholder": "0.00",
+    "ca_price_label": "Canada Price (CAD, optional)",
+    "ca_price_placeholder": "0.00",
+    "size_label": "Package Size",
+    "size_small": "Small (≤ shoebox)",
+    "size_medium": "Medium (≤ car trunk)",
+    "size_large": "Large (> car trunk)",
+    "size_large_error": "Sorry, we don't accept oversized items.",
+    "contact_label": "Contact",
+    "contact_placeholder": "WeChat ID or email",
+    "notes_label": "Notes (optional)",
+    "notes_placeholder": "Special requests or additional info",
+    "submit": "Submit Request",
+    "submitting": "Submitting…",
+    "success": "Your request has been received. I'll follow up via your provided contact.",
+    "error": "Submission failed. Please try again."
+  },
+  "footer": {
+    "text": "PassBy · 顺路带 — Personal service, informal operation, legal items only",
+    "note": "Friend referrals preferred"
+  }
+}

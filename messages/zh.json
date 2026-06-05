@@ -1,0 +1,73 @@
+{
+  "nav": {
+    "logo": "PassBy · 顺路带",
+    "langToggle": "EN"
+  },
+  "hero": {
+    "headline": "常跑 BC ↔ WA，顺路帮你带",
+    "subtext": "每周往返不列颠哥伦比亚省与华盛顿州，可帮朋友代购或带货过境，合理收费。",
+    "cta": "提交需求"
+  },
+  "services": {
+    "title": "服务内容",
+    "us_ca_direction": "美国 → 加拿大",
+    "us_ca_desc": "在美国购买的商品，帮你带回 BC",
+    "ca_us_direction": "加拿大 → 美国",
+    "ca_us_desc": "在加拿大购买的商品，帮你带到 WA",
+    "buy_title": "帮我买",
+    "buy_desc": "用我的信用卡帮你在美国购买，服务费极低（我赚积分）",
+    "carry_title": "帮我带",
+    "carry_desc": "你自己购买并寄到我 WA 的地址，我帮你带过境，收取合理运费"
+  },
+  "pricing": {
+    "title": "收费说明",
+    "rule1": "参考差价的约 20% 作为服务费基准，非固定",
+    "rule2": "包装越大收费越高；大件（超过小车后备箱）不接受",
+    "rule3": "选「帮我买」：费用极低甚至免费，我赚信用卡积分",
+    "rule4": "选「帮我带」：按标准运费收取",
+    "rule5": "最终报价收到需求后通过联系方式单独确认"
+  },
+  "how": {
+    "title": "操作流程",
+    "step1_title": "提交需求",
+    "step1_desc": "填写下方表单，告诉我要带什么",
+    "step2_title": "确认报价",
+    "step2_desc": "我审核后通过你的联系方式回复报价",
+    "step3_title": "收货",
+    "step3_desc": "下次过境时帮你带到目的地"
+  },
+  "form": {
+    "title": "提交需求",
+    "direction_label": "方向",
+    "direction_us_ca": "美国 → 加拿大",
+    "direction_ca_us": "加拿大 → 美国",
+    "service_label": "服务类型",
+    "service_buy": "帮我买（你用信用卡购买）",
+    "service_carry": "帮我带（我自己已买好）",
+    "item_name_label": "商品名称",
+    "item_name_placeholder": "简单描述一下商品",
+    "item_link_label": "商品链接（可选）",
+    "item_link_placeholder": "Amazon 或其他购物网站链接",
+    "us_price_label": "美国价格（USD）",
+    "us_price_placeholder": "0.00",
+    "ca_price_label": "加拿大价格（CAD，可选）",
+    "ca_price_placeholder": "0.00",
+    "size_label": "包装大小",
+    "size_small": "小件（鞋盒以内）",
+    "size_medium": "中件（不超过小车后备箱）",
+    "size_large": "大件（超过小车后备箱）",
+    "size_large_error": "抱歉，暂不接受大件物品",
+    "contact_label": "联系方式",
+    "contact_placeholder": "微信 ID 或邮箱",
+    "notes_label": "备注（可选）",
+    "notes_placeholder": "特殊要求或补充说明",
+    "submit": "提交需求",
+    "submitting": "提交中…",
+    "success": "已收到你的请求，我会通过你留下的联系方式回复你。",
+    "error": "提交失败，请稍后再试。"
+  },
+  "footer": {
+    "text": "PassBy · 顺路带 — 个人服务，非正式运营，仅限合法商品",
+    "note": "由朋友介绍优先"
+  }
+}
