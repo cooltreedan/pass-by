@@ -10,9 +10,6 @@ export async function POST(req: NextRequest) {
   if (body.packageSize === 'large') {
     return NextResponse.json({ error: 'Oversized items not accepted' }, { status: 400 })
   }
-  if (body.serviceType === 'buy' && !body.usPrice) {
-    return NextResponse.json({ error: 'US price required for Buy for Me' }, { status: 400 })
-  }
 
   try {
     await sendRequestEmail(body)

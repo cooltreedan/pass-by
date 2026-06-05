@@ -5,8 +5,6 @@ export type RequestData = {
   serviceType: string
   itemName: string
   itemLink?: string
-  usPrice?: string
-  caPrice?: string
   packageSize: string
   contact: string
   notes?: string
@@ -29,8 +27,6 @@ Direction:    ${dirLabel}
 Service:      ${svcLabel}
 Item:         ${data.itemName}
 Link:         ${data.itemLink || '—'}
-US Price:     ${data.usPrice ? `$${data.usPrice} USD` : '—'}
-CA Price:     ${data.caPrice ? `$${data.caPrice} CAD` : '—'}
 Package Size: ${sizeLabel[data.packageSize] ?? data.packageSize}
 Contact:      ${data.contact}
 Notes:        ${data.notes || '—'}

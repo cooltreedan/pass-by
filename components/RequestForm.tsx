@@ -9,8 +9,6 @@ type FormData = {
   serviceType: 'buy' | 'carry' | ''
   itemName: string
   itemLink: string
-  usPrice: string
-  caPrice: string
   packageSize: 'small' | 'medium' | 'large' | ''
   contact: string
   notes: string
@@ -21,8 +19,6 @@ const initial: FormData = {
   serviceType: '',
   itemName: '',
   itemLink: '',
-  usPrice: '',
-  caPrice: '',
   packageSize: '',
   contact: '',
   notes: '',
@@ -52,15 +48,13 @@ export function RequestForm() {
   const fileInputRef = useRef<HTMLInputElement>(null)
 
   const isLarge = form.packageSize === 'large'
-  const usPriceRequired = form.serviceType === 'buy'
   const canSubmit =
     !isLarge &&
     form.direction !== '' &&
     form.serviceType !== '' &&
     form.itemName.trim() !== '' &&
     form.packageSize !== '' &&
-    form.contact.trim() !== '' &&
-    (!usPriceRequired || form.usPrice.trim() !== '')
+    form.contact.trim() !== ''
 
   function set<K extends keyof FormData>(key: K, value: FormData[K]) {
     setForm(f => ({ ...f, [key]: value }))
@@ -193,17 +187,20 @@ export function RequestForm() {
 
           {/* Item link / image toggle */}
           <div>
-            <div className="flex gap-1 mb-2 bg-gray-100 rounded-lg p-1 w-fit">
-              {(['link', 'image'] as const).map(mode => (
-                <button
-                  key={mode}
-                  type="button"
-                  onClick={() => switchInputMode(mode)}
-                  className={`text-xs font-medium px-3 py-1.5 rounded-md transition-colors ${itemInputMode === mode ? 'bg-white text-brand-700 shadow-sm' : 'text-gray-500 hover:text-gray-700'}`}
-                >
-                  {t(mode === 'link' ? 'item_input_toggle_link' : 'item_input_toggle_image')}
-                </button>
-              ))}
+            <div className="flex items-center gap-2 mb-2">
+              <div className="flex gap-1 bg-gray-100 rounded-lg p-1">
+                {(['link', 'image'] as const).map(mode => (
+                  <button
+                    key={mode}
+                    type="button"
+                    onClick={() => switchInputMode(mode)}
+                    className={`text-xs font-medium px-3 py-1.5 rounded-md transition-colors ${itemInputMode === mode ? 'bg-white text-brand-700 shadow-sm' : 'text-gray-500 hover:text-gray-700'}`}
+                  >
+                    {t(mode === 'link' ? 'item_input_toggle_link' : 'item_input_toggle_image')}
+                  </button>
+                ))}
+              </div>
+              <span className="text-xs text-gray-400">({t('optional')})</span>
             </div>
 
             {itemInputMode === 'link' ? (
@@ -255,36 +252,6 @@ export function RequestForm() {
                 )}
               </div>
             )}
-          </div>
-
-          {/* Prices */}
-          <div className="grid grid-cols-2 gap-3">
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                {t('us_price_label')} {usPriceRequired && '*'}
-              </label>
-              <input
-                type="number"
-                min="0"
-                step="0.01"
-                value={form.usPrice}
-                onChange={e => set('usPrice', e.target.value)}
-                placeholder={t('us_price_placeholder')}
-                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-400"
-              />
-            </div>
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">{t('ca_price_label')}</label>
-              <input
-                type="number"
-                min="0"
-                step="0.01"
-                value={form.caPrice}
-                onChange={e => set('caPrice', e.target.value)}
-                placeholder={t('ca_price_placeholder')}
-                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-400"
-              />
-            </div>
           </div>
 
           {/* Package size */}
