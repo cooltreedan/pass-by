@@ -12,7 +12,9 @@ export function Nav() {
       <div className="max-w-4xl mx-auto px-4 h-14 flex items-center justify-between">
         <span className="font-bold text-lg text-brand-600">
           {t('logo')}
-          <span className="ml-2 text-xs font-normal bg-brand-100 text-brand-600 px-1.5 py-0.5 rounded">alpha</span>
+          {process.env.NEXT_PUBLIC_IS_ALPHA === 'true' && (
+            <span className="ml-2 text-xs font-normal bg-brand-100 text-brand-600 px-1.5 py-0.5 rounded">alpha</span>
+          )}
         </span>
         <button
           onClick={toggle}
