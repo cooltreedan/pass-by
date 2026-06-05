@@ -12,8 +12,6 @@ export function Pricing() {
     t('rule3'),
     t('rule4'),
     t('rule5'),
-    t('rule6'),
-    t('rule7'),
   ]
 
   return (
