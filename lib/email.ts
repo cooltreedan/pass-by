@@ -10,6 +10,7 @@ export type RequestData = {
   packageSize: string
   contact: string
   notes?: string
+  imageAttachment?: { filename: string; content: string }
 }
 
 export async function sendRequestEmail(data: RequestData) {
@@ -33,6 +34,7 @@ CA Price:     ${data.caPrice ? `$${data.caPrice} CAD` : '—'}
 Package Size: ${sizeLabel[data.packageSize] ?? data.packageSize}
 Contact:      ${data.contact}
 Notes:        ${data.notes || '—'}
+${data.imageAttachment ? `\n[Image attached: ${data.imageAttachment.filename}]` : ''}
 `
 
   const resend = new Resend(process.env.RESEND_API_KEY)
@@ -41,5 +43,11 @@ Notes:        ${data.notes || '—'}
     to: 'cooltreedan@gmail.com',
     subject: `PassBy: ${data.itemName} (${dirLabel})`,
     text,
+    ...(data.imageAttachment && {
+      attachments: [{
+        filename: data.imageAttachment.filename,
+        content: data.imageAttachment.content,
+      }],
+    }),
   })
 }
